@@ -34,6 +34,7 @@
                     <a class="nav-link active" href="{{ route('home.contact') }}">Contact</a>
                     <a class="nav-link active" href="{{ route('product.index') }}">Products</a>
                     <a class="nav-link active" href="{{ route('product.create') }}">Create</a>
+                    <a class="nav-link active" href="{{ route('cart.index') }}">Shopping cart</a>
                     <div class="vr bg-white mx-2 d-none d-lg-block"></div>
                     @guest
                         <a class="nav-link active" href="{{ route('login') }}">Login</a>
