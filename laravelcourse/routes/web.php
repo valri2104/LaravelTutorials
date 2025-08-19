@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name("home.index");
 Route::get('/products', 'App\Http\Controllers\ProductController@index')->name("product.index");
@@ -31,3 +32,5 @@ Route::get('/contact', function () {
         ->with('address', $address)
         ->with('number', $number);
 })->name('home.contact');
+
+Auth::routes();
